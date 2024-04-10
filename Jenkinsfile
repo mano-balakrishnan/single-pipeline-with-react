@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: env.BRANCH_NAME, url: 'https://github.com/mano-balakrishnan/single-pipeline-with-react.git'
+                checkout scm
             }
         }
 
